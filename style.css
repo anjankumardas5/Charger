@@ -1,0 +1,73 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: blueviolet;
+}
+button {
+  margin: 3px;
+  font-family: cursive;
+  color: rgb(205, 113, 38);
+  border-radius: 3px;
+}
+
+.battery-top {
+  width: 30px;
+  height: 10px;
+  background-color: rgb(145, 12, 72);
+  border: solid 2px silver;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 0 auto;
+  margin-top: -18px;
+}
+.battery-content {
+  width: 170px;
+  height: 260px;
+  background-color: black;
+  position: relative;
+  margin: 0 auto;
+  border: 5px solid rgb(137, 155, 22);
+  border-radius: 15px;
+  margin-top: 200px;
+}
+.charger {
+  width: 100%;
+  position: absolute;
+  animation-name: charging;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  bottom: 0;
+  border-radius: 10px;
+}
+.btn {
+  position: absolute;
+  top: 270px;
+  left: 10px;
+  color: green;
+}
+@keyframes charging {
+  0% {
+    height: 0%;
+    background: red;
+  }
+  25% {
+    height: 25%;
+    background: yellowgreen;
+  }
+  50% {
+    height: 50%;
+    background: green;
+  }
+  75% {
+    height: 75%;
+    background: rgb(198, 9, 72);
+  }
+  100% {
+    height: 100%;
+    background: rgb(35, 32, 5);
+  }
+}
